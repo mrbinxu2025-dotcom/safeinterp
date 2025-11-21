@@ -88,3 +88,62 @@ safeinterp 的目标是：
 
 ```bash
 pip install safeinterp
+
+当前源码安装
+git clone https://github.com/mrbinxu2025-dotcom/safeinterp.git
+cd safeinterp
+pip install -e .
+
+🚀 Quickstart / 快速上手
+1. 简单插值
+from safeinterp import interp_curve
+
+x = [0, 10, 20, 30]
+y = [0, 2, 8, 9]
+
+interp_curve(x=x, y=y, new_x=[5, 15, 25])
+
+2. Auto 模式
+interp_curve(x, y, new_x, mode="auto")
+
+3. 多段手动模式
+segments = [
+    {"mode": "linear"},
+    {"mode": "power", "k": 1.5},
+    {"mode": "cos"}
+]
+
+interp_curve(x, y, new_x, segments=segments)
+
+4. 批量插值（多区域、多技术）
+from safeinterp import batch_interp_curve
+
+data = {
+    "solar": {"y": [...], "mode": "auto"},
+    "wind":  {"y": [...], "mode": "power", "k": 1.2},
+}
+
+batch_interp_curve(data, common_x=[2020,2030,2040], common_new_x=range(2020,2041))
+
+🗺 Roadmap / 路线图
+
+ 2D surface interpolation
+
+ Monotonic Hermite mode
+
+ Smoothing spline mode
+
+ Visualization helper API
+
+ PyPI 发布
+
+ 在线 Demo (Colab)
+
+🤝 Contributing / 参与贡献
+
+PR、Issue、Feature Request 欢迎随时提出！
+
+📄 License
+
+MIT License
+Copyright (c) 2025
