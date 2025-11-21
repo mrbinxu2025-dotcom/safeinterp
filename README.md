@@ -1,3 +1,14 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mrbinxu2025-dotcom/safeinterp/main/logo.png" width="140">
+</p>
+
+<p align="center">
+  <a href="https://pypi.org/project/safeinterp/"><img src="https://img.shields.io/pypi/v/safeinterp"></a>
+  <a href="https://pypi.org/project/safeinterp/"><img src="https://img.shields.io/pypi/dm/safeinterp"></a>
+  <a href="https://github.com/mrbinxu2025-dotcom/safeinterp/stargazers"><img src="https://img.shields.io/github/stars/mrbinxu2025-dotcom/safeinterp"></a>
+  <a href="https://github.com/mrbinxu2025-dotcom/safeinterp/blob/main/LICENSE"><img src="https://img.shields.io/github/license/mrbinxu2025-dotcom/safeinterp"></a>
+</p>
+
 # safeinterp
 
 Safe & intelligent 1D interpolation and extrapolation engine for Python.
