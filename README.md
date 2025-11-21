@@ -213,4 +213,3 @@ wind_curve = results["wind"]
 ## 📄 License / 许可证
 
 Distributed under the MIT License. See LICENSE for more information.
----
